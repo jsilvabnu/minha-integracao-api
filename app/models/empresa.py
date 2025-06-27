@@ -3,7 +3,6 @@ from database import Base
 
 class Empresa(Base):
     __tablename__ = "empresa"
-    __allow_unmapped__ = True
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     cnpj = Column(String(14), nullable=False)
